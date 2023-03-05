@@ -35,7 +35,7 @@ router.patch("/:id", async (req, res) => {
 
 router.delete("/:id", async (req, res) => {
   Category.destroy({ where: { id: req.params.id } });
-  res.send({ status: "success" });
+  res.send({ status: "operation successfull" });
 });
 
 module.exports = router;
